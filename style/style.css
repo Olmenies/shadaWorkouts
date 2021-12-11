@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*{
+	font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/********************************************************************************/
+
+header{
+	display:flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.header__punchline{
+	padding: 1rem;
+}
+
+.header__navbar__list{
+	display: flex;
+	list-style: none;
+}
+
+.header__navbar__item{
+	padding:1rem;
+}
+
+/********************************************************************************/
+
+.main__introduccion{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	height: 200px;
+	margin: 1rem;
+	text-align: center;
+}
+
+.main__titulo{
+	text-align: center;
+	margin: 20px;
+}
+
+.main__introduccion{
+	text-align: center;
+}
+
+.main__introduccion__boton{
+	align-self: center;
+	text-align: center;
+	padding: 1rem;
+	background-color: tomato;
+	width: 200px;
+	border-radius: 20px;
+	margin: 20px;
+	transition: filter 0.5s;
+}
+/*
+.main__introduccion__imagen{
+	width: 50px;
+	height: 50px;
+}
+*/
+.main__introduccion__boton:hover{
+	filter: brightness(50%);
+}
+
+.main__programa{
+	display: grid;	
+	grid-template-columns: repeat(3,33.3%);
+	grid-template-rows: auto 1fr 75px;
+	grid-template-areas:
+	". programaTitulo ."
+	"programaImg programaLista programaLista"
+	"programaImg programaBoton .";
+	margin: 1rem;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+}
+
+.main__programa__img{
+	grid-area: programaImg;
+}
+
+.main__programa__titulo{
+	grid-area: programaTitulo;
+	margin: 20px;
+}
+
+.main__programa__lista{
+	grid-area: programaLista;
+}
+
+.main__programa__boton{
+	grid-area: programaBoton;
+	align-self: center;
+	text-align: center;
+	padding: 1rem;
+	background-color: tomato;
+	width: 200px;
+	border-radius: 20px;
+	margin: 20px;
+	transition: filter 0.5s;
+}
+
+.main__programa__boton:hover{
+
+	filter: brightness(50%);
+}
+
+.main__recetas__titulo{
+	text-align: center;
+	margin: 1rem;
+}
+
+.main__recetas{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 1rem;
+}
+
+.main__recetas a{
+	border-radius: 50%;
+	align-content: center;
+	text-align: center;
+}
+
+.main__recetas a img{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	transition: filter 0.5s;
+}
+
+.main__recetas a img:hover{
+	filter: brightness(50%);
+}
+
+.main__sobremi{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	margin: 1rem;
+}
+
+.main__sobremi__titulo{
+	text-align: center;
+}
+
+.main__sobremi__parrafo{
+	text-align: center;
+	margin:1rem;
+	width: 30%;
+}
+
+.main__sobremi__imagen{
+	height: 500px;
+	width: 700px;
+	border-radius: 10%;
+}
+
+a{
+	text-decoration: none;
+}
