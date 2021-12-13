@@ -14,25 +14,10 @@ header{
 	display:flex;
 	align-content: center;
 	justify-content: space-between;
-	margin: 1rem;
-	/*
-	position: fixed;
-	top: 0;
-	*/
-}
-
-.header__logo{
-	border-radius: 50%;
-	height: 200px;
 }
 
 .header__punchline{
 	padding: 1rem;
-	align-self: center;
-}
-
-.header__navbar{
-	align-self: center;
 }
 
 .header__navbar__list{
@@ -47,58 +32,48 @@ header{
 /********************************************************************************/
 
 .main__introduccion{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto 500px 75px;
-	grid-template-areas: 
-	"introduccionTitulo introduccionTitulo"
-	"introduccionParrafo introduccionImg"
-	"introduccionBoton introduccionImg";
-	align-items: center;
-	justify-items: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	height: 200px;
 	margin: 1rem;
-
+	text-align: center;
 }
 
 .main__titulo{
-	grid-area: introduccionTitulo;
 	text-align: center;
 	margin: 20px;
 }
 
-.main__introduccion__parrafo{
-	grid-area: introduccionParrafo;
+.main__introduccion{
 	text-align: center;
 }
 
 .main__introduccion__boton{
-	grid-area: introduccionBoton;
 	align-self: center;
 	text-align: center;
 	padding: 1rem;
 	background-color: tomato;
-	width 200px;
+	width: 200px;
 	border-radius: 20px;
 	margin: 20px;
 	transition: filter 0.5s;
 }
-
-
+/*
+.main__introduccion__imagen{
+	width: 50px;
+	height: 50px;
+}
+*/
 .main__introduccion__boton:hover{
 	filter: brightness(50%);
-}
-
-.main__introduccion__img{
-	grid-area: introduccionImg;
-	height: 100%;
-	max-width: 100%;
-	border-radius:10%;
 }
 
 .main__programa{
 	display: grid;	
 	grid-template-columns: repeat(3,33.3%);
-	grid-template-rows: auto 500px 75px;
+	grid-template-rows: auto 1fr 75px;
 	grid-template-areas:
 	". programaTitulo ."
 	"programaImg programaLista programaLista"
@@ -106,15 +81,11 @@ header{
 	margin: 1rem;
 	align-items: center;
 	align-content: center;
+	justify-items: center;
 }
 
 .main__programa__img{
 	grid-area: programaImg;
-	height:100%;
-	max-width: 100%;
-	border-radius:10%;
-	justify-self: center;
-
 }
 
 .main__programa__titulo{
@@ -124,7 +95,6 @@ header{
 
 .main__programa__lista{
 	grid-area: programaLista;
-	padding: 2rem;
 }
 
 .main__programa__boton{
@@ -218,34 +188,23 @@ footer{
 .footer__descripcion{
 	display: grid;
 	grid-template-columns: 100px 200px;
-	grid-template-rows: 50px 100px;
+	grid-template-rows: 50px 50px;
 	grid-template-areas:
-	"footerDescripcionTitulo footerDescripcionTitulo"
+	"footerDescripcionTitulo footerDescripcionParrafo"
 	"footerDescripcionImg footerDescripcionParrafo";
 	margin: 1rem;
-	justify-items: center;
-	align-items: center;
 }
 
 .footer__descripcion__parrafo{
 	grid-area: footerDescripcionParrafo;
-	justify-self: center;
-	text-align: center;
 }
 
 .footer__descripcion__titulo{
 	grid-area: footerDescripcionTitulo;
-	justify-self: center;
-	text-align: center;
 }
 
 .footer__descripcion__img{
 	grid-area: footerDescripcionImg;
-	object-fit: cover;
-	width: 100%;
-	max-height: 100%;
-	border-radius:50%;
-	justify-self: center;
 }
 
 .footer__contacto__lista{
