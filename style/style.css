@@ -10,14 +10,11 @@
 
 /********************************************************************************/
 
-*{
-	font-family: 'Baloo Bhaijaan 2', cursive;
-}
 header{
 	display:flex;
 	align-content: center;
 	justify-content: space-between;
-	margin: 1rem;
+	padding: 1rem;
 	/*
 	position: fixed;
 	top: 0;
@@ -27,6 +24,7 @@ header{
 .header__logo{
 	border-radius: 50%;
 	height: 200px;
+	margin 1rem;
 }
 
 .header__punchline{
@@ -212,7 +210,7 @@ footer{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	margin: 1rem;
+	padding: 0 1rem;
 	background-color: tomato;
 }
 
@@ -271,8 +269,8 @@ footer{
 		flex-direction:column;
 		align-content: center;
 		justify-content: space-between;
-		background-color: tomato;
 		align-items: center;
+		padding: 1rem;
 	}
 
 	.header__logo{
@@ -283,7 +281,7 @@ footer{
 	.main__introduccion{
 		display: grid;
 		grid-template-columns: 50% 50%;
-		grid-template-rows: auto 500px auto 75px;
+		grid-template-rows: auto 300px auto 75px;
 		grid-template-areas: 
 		"introduccionTitulo introduccionTitulo"
 		"introduccionImg introduccionImg"
@@ -326,6 +324,7 @@ footer{
 
 	.main__sobremi__imagen{
 		width: 100%;
+		height: 300px;
 		border-radius: 10%;
 	}
 
@@ -334,8 +333,8 @@ footer{
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		margin: 1rem;
 		background-color: tomato;
+		padding: 0 1rem;
 	}
 
 	.footer__descripcion{
