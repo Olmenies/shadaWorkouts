@@ -263,10 +263,6 @@ footer{
 
 /********************************************************************************/
 
-<<<<<<< HEAD
-/* MEDIA QUERIES */
-
-=======
 /* MEDIA QUERIES - RESPONSIVE */
 /* Estilos mobile */
 @media screen and (max-width: 768px){
@@ -360,5 +356,4 @@ footer{
 		width: 100px;
 	}
 }
->>>>>>> desarrollo
 
