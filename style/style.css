@@ -60,7 +60,6 @@ header{
 	align-items: center;
 	justify-items: center;
 	margin: 1rem;
-
 }
 
 .main__titulo{
@@ -264,6 +263,102 @@ footer{
 
 /********************************************************************************/
 
+<<<<<<< HEAD
 /* MEDIA QUERIES */
 
+=======
+/* MEDIA QUERIES - RESPONSIVE */
+/* Estilos mobile */
+@media screen and (max-width: 768px){
+	header{
+		display:flex;
+		flex-direction:column;
+		align-content: center;
+		justify-content: space-between;
+		background-color: tomato;
+		align-items: center;
+	}
+
+	.header__logo{
+		height:100px;
+		width: 100px;
+	}
+
+	.main__introduccion{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto 500px auto 75px;
+		grid-template-areas: 
+		"introduccionTitulo introduccionTitulo"
+		"introduccionImg introduccionImg"
+		"introduccionParrafo introduccionParrafo"
+		"introduccionBoton introduccionBoton";
+		align-items: center;
+		justify-items: center;
+		margin: 1rem;
+	}
+
+	.main__programa{
+		display: grid;	
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto 500px auto 75px;
+		grid-template-areas:
+		"programaTitulo programaTitulo"
+		"programaImg programaImg"
+		"programaLista programaLista"
+		"programaBoton programaBoton";
+		margin: 1rem;
+		align-items: center;
+		align-content: center;
+		justify-items: center;
+	}
+
+	.main__sobremi{
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: space-around;
+		margin: 1rem;
+		flex-direction: column;
+	}
+
+	.main__sobremi__parrafo{
+		text-align: center;
+		margin:1rem;
+		width: 100%;
+	}
+
+	.main__sobremi__imagen{
+		width: 100%;
+		border-radius: 10%;
+	}
+
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin: 1rem;
+		background-color: tomato;
+	}
+
+	.footer__descripcion{
+		display: grid;
+		grid-template-columns: 100px 200px;
+		grid-template-rows: 50px 100px auto;
+		grid-template-areas:
+		"footerDescripcionTitulo footerDescripcionTitulo"
+		"footerDescripcionImg footerDescripcionImg"
+		"footerDescripcionParrafo footerDescripcionParrafo";
+		margin: 1rem;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.footer__descripcion__img{
+		height:100px;
+		width: 100px;
+	}
+}
+>>>>>>> desarrollo
 
