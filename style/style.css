@@ -10,6 +10,9 @@
 
 /********************************************************************************/
 
+*{
+	font-family: 'Baloo Bhaijaan 2', cursive;
+}
 header{
 	display:flex;
 	align-content: center;
@@ -69,6 +72,8 @@ header{
 .main__introduccion__parrafo{
 	grid-area: introduccionParrafo;
 	text-align: center;
+	margin:1rem;
+	width: 70%;
 }
 
 .main__introduccion__boton{
@@ -82,7 +87,6 @@ header{
 	margin: 20px;
 	transition: filter 0.5s;
 }
-
 
 .main__introduccion__boton:hover{
 	filter: brightness(50%);
@@ -114,7 +118,6 @@ header{
 	max-width: 100%;
 	border-radius:10%;
 	justify-self: center;
-
 }
 
 .main__programa__titulo{
@@ -140,7 +143,6 @@ header{
 }
 
 .main__programa__boton:hover{
-
 	filter: brightness(50%);
 }
 
@@ -259,3 +261,9 @@ footer{
 .footer__sitemap__lista{
 	list-style: none;
 }
+
+/********************************************************************************/
+
+/* MEDIA QUERIES */
+
+
